@@ -24,7 +24,7 @@ function Summary({
             <div className="summary-card">
 
                 <h3>
-                    Most Active User
+                    Active User
                 </h3>
                 <p>
                     {summary.most_active_user}
