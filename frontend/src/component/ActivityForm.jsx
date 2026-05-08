@@ -43,7 +43,7 @@ function ActivityForm({
 
             return;
         }
-
+        
         if (formData.hours <= 0) {
 
             setError(

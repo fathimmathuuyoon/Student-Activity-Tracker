@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
 
   const [activities, setActivities] = useState([]);
-
+  
   const [summary, setSummary] = useState({});
 
   const [activitiesLoading, setActivitiesLoading] = useState(false);
@@ -64,30 +64,32 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <>
+      <div className="container">
 
-      <h1>Student Activity Tracker</h1>
+        <h1>Student Activity Tracker</h1>
 
-      <ActivityForm
-        fetchActivities={fetchActivities}
-        fetchSummary={fetchSummary}
-      />
-      <Summary
-        summary={summary}
-        loading={summaryLoading}
-      />
-      {activitiesLoading ? (
-        <p className="loading-text">
-          Loading activities...
-        </p>
-      ) : (
-        <ActivityList
-          activities={activities}
+        <ActivityForm
           fetchActivities={fetchActivities}
           fetchSummary={fetchSummary}
         />
-      )}
-    </div>
+        <Summary
+          summary={summary}
+          loading={summaryLoading}
+        />
+        {activitiesLoading ? (
+          <p className="loading-text">
+            Loading activities...
+          </p>
+        ) : (
+          <ActivityList
+            activities={activities}
+            fetchActivities={fetchActivities}
+            fetchSummary={fetchSummary}
+          />
+        )}
+      </div>
+    </>
   );
 }
 

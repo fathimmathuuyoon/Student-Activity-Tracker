@@ -7,9 +7,7 @@ function ActivityList({
     fetchSummary,
 }) {
 
-    const [deleteLoading,
-        setDeleteLoading] =
-        useState(null);
+    const [deleteLoading, setDeleteLoading] = useState(null);
 
     const handleDelete = async (id) => {
 
@@ -43,7 +41,7 @@ function ActivityList({
                         <th>Name</th>
                         <th>Activity</th>
                         <th>Hours</th>
-                        <th>Action</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>

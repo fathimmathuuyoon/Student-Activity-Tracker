@@ -1,24 +1,19 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background: #f4f7fc;
-  font-family: Arial, sans-serif;
 }
 
 .container {
   max-width: 1000px;
   margin: 40px auto;
-  padding: 15px;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 30px;
-  color: #222;
 }
 
 .form {
@@ -43,11 +38,6 @@ h1 {
   color: white;
   border-radius: 6px;
   cursor: pointer;
-}
-
-.form button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
 }
 
 .error {
@@ -78,7 +68,7 @@ h1 {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 table th,
